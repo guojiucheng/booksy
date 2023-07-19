@@ -77,7 +77,7 @@ class ClickActionConfigDialog : BaseDialogFragment(R.layout.dialog_click_action_
         }
         binding.tvTopLeft.setOnClickListener {
             selectAction { action ->
-                putPrefInt(PreferKey.clickActionTL, action)
+                putPrefInt(PreferKey.clickActionTR, action)
                 (it as? TextView)?.text = actions[action]
             }
         }
@@ -95,7 +95,7 @@ class ClickActionConfigDialog : BaseDialogFragment(R.layout.dialog_click_action_
         }
         binding.tvMiddleLeft.setOnClickListener {
             selectAction { action ->
-                putPrefInt(PreferKey.clickActionML, action)
+                putPrefInt(PreferKey.clickActionMR, action)
                 (it as? TextView)?.text = actions[action]
             }
         }
@@ -113,7 +113,7 @@ class ClickActionConfigDialog : BaseDialogFragment(R.layout.dialog_click_action_
         }
         binding.tvBottomLeft.setOnClickListener {
             selectAction { action ->
-                putPrefInt(PreferKey.clickActionBL, action)
+                putPrefInt(PreferKey.clickActionBR, action)
                 (it as? TextView)?.text = actions[action]
             }
         }
